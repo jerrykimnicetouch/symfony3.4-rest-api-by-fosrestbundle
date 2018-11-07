@@ -1,0 +1,17 @@
+{% block body %}
+    <script src="https://cdn.auth0.com/js/lock/10.0/lock.min.js"></script>
+    <script type="text/javascript">
+        var lock = new Auth0Lock('XxkVN2Y2UvVQxzNQwffc7OnpA7DJW9h9', 'jerrykimapi.auth0.com', {
+            auth: {
+                redirectUrl: 'http://jerrykimapi.com:8000',
+                responseType: 'code',
+                params: {
+                    scope: 'openid email' // Learn about scopes: https://auth0.com/docs/scopes
+                }
+            }
+        });
+
+        lock.show();
+    </script>
+    <!--<button onclick="lock.show();">Login</button>-->
+{% endblock %}

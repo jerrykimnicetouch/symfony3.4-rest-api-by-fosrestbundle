@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+    <div id="wrapper">
+        <div id="container">
+
+			<div id="status"></div>
+
+            <div id="next">
+			
+            	<div class="container">
+					
+				  				  
+				  <!-- Response Message -->
+				  <h2 style="font-weight:700;">GET Response</h2>
+				  <p>The below show the result from GET method executed</p>    
+				  <br />
+				   
+				  <!-- Object Model -->
+				  <h2 style="font-weight:700;">Selected object detail</h2>
+				  <p>The below shows the object detail selected from GET method</p> 
+				  <table class="table">
+					<thead>
+					  <tr>
+						<th>NAME</th>
+						<th>PROFESSION</th>
+						<th>CAREER</th>
+						
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr>
+						<td>{{ name }}</td>
+						<td>{{ profession }}</td>
+						<td>{{ career }}</td>
+						
+					  </tr>
+					  
+					  
+					</tbody>
+				  </table>
+				  <br />
+				  
+				 
+				  <br /><br /><br />
+				  
+				</div> <!-- container -->
+				
+            </div> <!-- next -->
+
+        </div> <!-- container -->
+    </div> <!-- wrapper -->
+{% endblock %}
+{% block stylesheets %}
+
+{% endblock %}
